@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import Home from "./screens/Home";
-import AboutUs from "./screens/AboutUs";
+import AboutUs from "./screens/Community";
 import Content from "./screens/Content";
 import Members from "./screens/Members";
 
@@ -17,7 +17,7 @@ const App = () => {
         <div id="home">
           <Home />
         </div>
-        <div id="about-us">
+        <div id="cummunity">
           <AboutUs />
         </div>
         <div id="members">

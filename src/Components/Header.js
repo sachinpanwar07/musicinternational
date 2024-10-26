@@ -11,9 +11,11 @@ const Header = () => {
       </div>
       <nav className="nav-links">
         <Link to="home" smooth={true} duration={500}>Home</Link>
-        <Link to="about-us" smooth={true} duration={500}>About Us</Link>
-        <Link to="members" smooth={true} duration={500}>Members</Link>
+        <Link to="cummunity" smooth={true} duration={500}>Community</Link>
         <Link to="content" smooth={true} duration={500}>Content</Link>
+        <Link to="members" smooth={true} duration={500}>Members</Link>
+        
+
       </nav>
       <div className="profile">
         <img src="/profile.jpg" alt="Profile" className="profile-pic" />
