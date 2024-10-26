@@ -1,11 +1,19 @@
 
 import React from 'react';
-
+import Card from '../Components/card';
+import cardData from '../Data/cardData.json'
 const Community = () => {
   return (
     <section id="about-us">
-      <h2>Community</h2>
-      <p>Learn about our mission and vision in preserving music legacy.</p>
+     <div className="card-container">
+      {cardData.map((card, index) => (
+        <Card
+          key={index}
+          title={card.title}
+          description={card.description}
+        />
+      ))}
+    </div>
     </section>
   );
 };

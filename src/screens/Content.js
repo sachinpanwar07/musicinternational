@@ -7,7 +7,7 @@ const Content = () => {
     <section id="content">
       <h2>Content</h2>
       {videos.map((video)=>(
-        <VideoPlayer key={video.id} src={video.src}   description={video.description}  title={video.title}/>
+        <VideoPlayer key={video.id} src={video.src}   description={video.description} />
       ))}
     </section>
   );

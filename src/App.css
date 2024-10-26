@@ -44,7 +44,11 @@ input, button {
     padding: 1rem;
   }
 }
-
+.logo-image {
+  width: 50px; /* Set the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 15px; /* Space between logo and title */
+}
 /* Desktop-specific adjustments */
 @media (min-width: 768px) {
   .App {
