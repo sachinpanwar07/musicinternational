@@ -1,15 +1,33 @@
-
-import React from 'react';
-import "../Style/members.css";
+// Members.js
+import React from "react";
+import MemberCard from "../Components/MemberCard";
+import members from "../Data/members";
 
 const Members = () => {
   return (
-    <section id="members">
-      <h2>Members</h2>
-      <p>Meet our dedicated members who contribute to the music legacy.</p>
-      
-    </section>
+    <div style={styles.container}>
+      {members && members.length > 0 ? (
+        members.map((member) => (
+          <MemberCard
+            key={member.id}
+            name={member.name}
+            image={member.image}
+            social={member.social}
+          />
+        ))
+      ) : (
+        <p>No members found.</p>
+      )}
+    </div>
   );
+};
+
+const styles = {
+  container: {
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center",
+  },
 };
 
 export default Members;
