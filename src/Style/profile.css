@@ -3,13 +3,11 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-    color: #ffffff;
+    color: #050101;
     transition: color 0.3s;
-    margin-top: -19px;
+    /* margin-top: -19px; */
   
 }
-  
-
   .profile-left {
     display: flex;
     flex-direction: column;
@@ -27,12 +25,14 @@
   
   h2 {
     margin: -0.5rem;
+    color: black;
   }
   
   p {
     text-align: center;
     font-size: 1.1rem;
     margin-bottom: 1rem;
+    color: #333;
   }
   
  

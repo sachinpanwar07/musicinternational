@@ -2,7 +2,6 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
 }
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -62,7 +61,6 @@ body {
     flex-wrap: wrap; 
     
 }
-
 .nav-links a {
     color: white;
     text-decoration: none;
@@ -70,18 +68,13 @@ body {
     position: relative;
     transition: color 0.3s;
 }
-
-
 .nav-links a:hover::after {
     width: 100%;
    
 }
-
-
 .nav-links a:hover {
     color: rgb(0, 0, 0);
 }
-
 .profile-container {
     display: flex;
     align-items: center;
@@ -91,10 +84,9 @@ body {
     margin-top: -19px;
   
 }
-
-.profile-container:hover {
+/* .profile-container:hover {
     color: #000000;
-}
+} */
 
 
   .profile-sub a {
