@@ -1,0 +1,27 @@
+.video-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 20px;
+  }
+  
+  .video-container {
+    flex: 1;
+    max-width: 560px; /* Set a max width for the video */
+    height: 315px; /* Set a fixed height for the video */
+  }
+  
+  .description-container {
+    flex: 1;
+    margin-left: 20px;
+  }
+  
+  .description-container h2 {
+    margin: 0;
+  }
+  
+  .description-container p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
