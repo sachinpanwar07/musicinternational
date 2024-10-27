@@ -1,34 +1,24 @@
-// src/App.js
-
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./Components/Header";
-import Footer from "./Components/Footer";
-import Home from "./screens/Home";
-import AboutUs from "./screens/Community";
-import Content from "./screens/Content";
-import Members from "./screens/Members";
+import React, { useState } from 'react';
+import Header from './Components/Header';
+import Home from './screens/Home';
+import ContactUs from './screens/ContactUs';
+import AboutUs from './screens/AboutUs';
+import Members from './screens/Members';
+import Content from './screens/Content'
+import './styles.css';
 
 const App = () => {
+  const [activeSection, setActiveSection] = useState('home');
+
   return (
-    <Router>
-      <Header />
-      <main>
-        <div id="home">
-          <Home />
-        </div>
-        <div id="cummunity">
-          <AboutUs />
-        </div>
-        <div id="members">
-          <Members />
-        </div>
-        <div id="content">
-          <Content />
-        </div>
-      </main>
-      <Footer />
-    </Router>
+    <div>
+      <Header onNavClick={setActiveSection} />
+      {activeSection === 'home' && <Home />}
+      {activeSection === 'about-us' && <AboutUs />}
+      {activeSection === 'members' && <Members />}
+      {activeSection === 'content' && <Content />}
+      {activeSection === 'contactus' && <ContactUs />}
+    </div>
   );
 };
 
