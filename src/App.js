@@ -8,6 +8,7 @@ import Content from './screens/Content';
 import Community from './screens/Community';
 import Profile from './screens/Profile';
 import './styles.css';
+import VideoContent from './screens/VIdeoContant';
 
 const App = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -20,6 +21,7 @@ const App = () => {
         <div>
           <Home />
           <AboutUs />
+          <VideoContent/>
           <ContactUs />
         </div>
       )}
