@@ -9,6 +9,8 @@ import Community from './screens/Community';
 import Profile from './screens/Profile';
 import './styles.css';
 import VideoContent from './screens/VIdeoContant';
+import JoinUs from './screens/JoinUs';
+import Footer from './Components/Footer';
 
 const App = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -22,7 +24,9 @@ const App = () => {
           <Home />
           <AboutUs />
           <VideoContent/>
+          <JoinUs />
           <ContactUs />
+          <Footer />
         </div>
       )}
 

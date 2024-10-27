@@ -9,6 +9,7 @@ const Home = () => {
       <p>
         Dedicated to the advancement of independent musicians, artists, performers, and various talents in the music and arts industry.
       </p>
+      <a href="#" class="home-button">Community ➔</a>
       <div className="home__mouse-scroll-cont">
         <div className="mouse">
           <div className="dot"></div>

@@ -6,7 +6,10 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+    
     background: linear-gradient(90deg, rgba(221, 13, 48, 0.863), rgba(245, 87, 113, 0.808));
     color: white;
     position: sticky;
@@ -83,7 +86,7 @@ body {
     color: rgb(0, 0, 0);
 }
 
-.profile-container {
+.myprofile-container {
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -93,17 +96,17 @@ body {
 
 }
 
-.profile-container:hover {
+.myprofile-container:hover {
     color: #000000;
 }
 
 
-.profile-sub a {
+.myprofile-sub a {
     text-decoration: none;
 }
 
 
-.profile-sub {
+.myprofile-sub {
     display: flex;
     font-size: 1.2rem;
     font-weight: 700;
@@ -114,7 +117,7 @@ body {
 }
 
 
-.profile-img-cont {
+.myprofile-img-cont {
     width: 4rem;
     height: 4rem;
     border-radius: 50px;
@@ -123,7 +126,7 @@ body {
     background: #000000;
 }
 
-.profile-img {
+.myprofile-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -255,7 +258,7 @@ body {
         gap: 30px;
     }
 
-    .profile-sub {
+    .myprofile-sub {
         font-size: 1rem;
     }
 }
@@ -350,6 +353,13 @@ body {
     }
 }
 
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
 
 
 
@@ -369,7 +379,7 @@ body {
     font-size: 3rem;
     font-weight: 700;
     color: #222;
-    margin-top: -10px;
+    margin-top: -60px;
     margin-bottom: 0rem;
     letter-spacing: 1px;
 }
@@ -380,6 +390,71 @@ body {
     line-height: 1.5;
     color: #555;
 }
+
+.home-button {
+    align-items: center;
+    background-image: linear-gradient(90deg, rgba(221, 13, 48, 0.863), rgba(245, 87, 113, 0.808));
+    border: 0;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    font-family: "Codec cold",sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    height: 54px;
+    margin-top: 20px;
+    justify-content: center;
+    letter-spacing: .4px;
+    line-height: 1;
+    max-width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .home-button:active {
+    outline: 0;
+  }
+  
+  .home-button:hover {
+    outline: 0;
+  }
+  
+  .home-button span {
+    transition: all 200ms;
+  }
+  
+  .home-button:hover span {
+    transform: scale(.9);
+    opacity: .75;
+  }
+  
+  @media screen and (max-width: 991px) {
+    .home-button {
+      font-size: 15px;
+      height: 50px;
+    }
+  
+    .home-button span {
+      line-height: 50px;
+    }
+  }
+  
+  .home-button:not([disabled]):focus {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  }
+  
+  .home-button:not([disabled]):hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  }
 
 .home__mouse-scroll-cont {
     position: absolute;
@@ -551,4 +626,94 @@ body {
 .social-icon {
     width: 30px;
     height: 30px;
+}
+
+#joinus {
+    display: flex;
+    flex-direction: column;  /* Stack elements vertically */
+    align-items: center;     /* Center items horizontally */
+    justify-content: center;  /* Center items vertically */
+    height: 60vh;           /* Full height of the viewport */
+    background-color: #fff;  /* White background */
+    color: #000;             /* Black text color */
+    text-align: center;      /* Center text alignment */
+    font-family: 'Calibri', sans-serif; /* Set font to Calibri */
+    padding: 2rem;           /* Add padding for spacing */
+}
+
+#joinus h1 {
+    font-size: 3rem;         /* Font size for the heading */
+    font-weight: bold;       /* Make the heading bold */
+    margin-bottom: 1rem;     /* Space below the heading */
+}
+
+#joinus p {
+    font-size: 1.5rem;       /* Font size for the paragraph */
+    max-width: 700px;        /* Restrict width for better readability */
+    line-height: 1.5;        /* Set line height for spacing */
+    margin: 0;               /* Remove default margins */
+}
+.join-button {
+  align-items: center;
+  background-image: linear-gradient(90deg, rgba(221, 13, 48, 0.863), rgba(245, 87, 113, 0.808));
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font-family: "Codec cold",sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  height: 54px;
+  margin-top: 20px;
+  justify-content: center;
+  letter-spacing: .4px;
+  line-height: 1;
+  max-width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.join-button:active {
+  outline: 0;
+}
+
+.join-button:hover {
+  outline: 0;
+}
+
+.join-button span {
+  transition: all 200ms;
+}
+
+.join-button:hover span {
+  transform: scale(.9);
+  opacity: .75;
+}
+
+@media screen and (max-width: 991px) {
+  .join-button {
+    font-size: 15px;
+    height: 50px;
+  }
+
+  .join-button span {
+    line-height: 50px;
+  }
+}
+
+.join-button:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.join-button:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
 }
