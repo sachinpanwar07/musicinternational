@@ -9,10 +9,11 @@ body {
     padding: 5px;
     background: linear-gradient(90deg, rgba(221, 13, 48, 0.863), rgba(245, 87, 113, 0.808));
     color: white;
-    position: sticky; 
-    top: 0; 
-    z-index: 1000; 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
+
 .header-logo {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -45,22 +46,22 @@ body {
 }
 
 .header-logo h3 {
-    margin-top: -55px;
+    margin-top: -65px;
     margin-bottom: 25px;
     grid-column: 2;
 }
 
 .nav-links {
     padding: 2.9rem;
-    margin-left: 145px;
+    margin-left: 60px;
     display: flex;
     font-size: 1.2rem;
     color: #ffffff;
     letter-spacing: 1px;
     font-weight: 700;
-    gap: 50px;
-    flex-wrap: wrap; 
-    
+    gap: 30px;
+    flex-wrap: wrap;
+
 }
 
 .nav-links a {
@@ -74,7 +75,7 @@ body {
 
 .nav-links a:hover::after {
     width: 100%;
-   
+
 }
 
 
@@ -89,7 +90,7 @@ body {
     color: #ffffff;
     transition: color 0.3s;
     margin-top: -19px;
-  
+
 }
 
 .profile-container:hover {
@@ -97,8 +98,8 @@ body {
 }
 
 
-  .profile-sub a {
-    text-decoration: none; 
+.profile-sub a {
+    text-decoration: none;
 }
 
 
@@ -107,9 +108,9 @@ body {
     font-size: 1.2rem;
     font-weight: 700;
     letter-spacing: 1px;
-    gap: 50px;
+    gap: 30px;
     margin-right: 10px;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 
@@ -133,81 +134,112 @@ body {
 
 
 .hamburger {
-    display: none; 
-    flex-direction: column; 
-    cursor: pointer; 
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
 }
+
 .hamburger {
-    display: none; 
+    display: none;
     flex-direction: column;
     justify-content: space-around;
-    width: 30px; 
-    height: 30px; 
-    cursor: pointer; 
-    margin-right: 20px; 
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 20px;
 }
 
 
 .bar {
-    width: 100%; /* Full width */
-    height: 4px; /* Height of each bar */
-    background-color: white; /* Color of the bars */
-    border-radius: 5px; /* Optional: rounded edges */
-    transition: all 0.3s ease; /* Transition for hover effects */
+    width: 100%;
+    /* Full width */
+    height: 4px;
+    /* Height of each bar */
+    background-color: white;
+    /* Color of the bars */
+    border-radius: 5px;
+    /* Optional: rounded edges */
+    transition: all 0.3s ease;
+    /* Transition for hover effects */
 }
 
 /* Show the hamburger icon on smaller screens */
 @media only screen and (max-width: 900px) {
     .hamburger {
-        display: flex; /* Show on mobile */
+        display: flex;
+        /* Show on mobile */
     }
 
     .nav-links {
-        display: none; /* Hide the nav links initially */
-        flex-direction: column; /* Stack the links vertically */
-        position: absolute; /* Position the menu absolutely */
-        top: 60px; /* Adjust according to your header height */
-        right: 0; /* Align to the right */
-        background-color: rgba(221, 13, 48, 0.863); /* Background color */
-        width: 100%; /* Full width */
-        padding: 1rem; /* Padding around the menu */
-        z-index: 999; /* Ensure it is on top */
+        display: none;
+        /* Hide the nav links initially */
+        flex-direction: column;
+        /* Stack the links vertically */
+        position: absolute;
+        /* Position the menu absolutely */
+        top: 60px;
+        /* Adjust according to your header height */
+        right: 0;
+        /* Align to the right */
+        background-color: rgba(221, 13, 48, 0.863);
+        /* Background color */
+        width: 100%;
+        /* Full width */
+        padding: 1rem;
+        /* Padding around the menu */
+        z-index: 999;
+        /* Ensure it is on top */
     }
 
     .nav-links.active {
-        display: flex; /* Show when active */
+        display: flex;
+        /* Show when active */
     }
 }
 
 /* Display hamburger icon on mobile devices */
 @media only screen and (max-width: 600px) {
     .hamburger {
-        display: flex; /* Show hamburger icon */
-        margin-right: 20px; /* Add some margin for spacing */
+        display: flex;
+        /* Show hamburger icon */
+        margin-right: 20px;
+        /* Add some margin for spacing */
     }
 
     .nav-links {
-        display: none; /* Hide nav links by default on mobile */
-        flex-direction: column; /* Stack links vertically */
-        position: absolute; /* Position it absolute for overlay effect */
-        top: 60px; /* Position below the header */
-        right: 0; /* Align to the right */
-        background: rgba(255, 255, 255, 0.9); /* Background color */
-        width: 100%; /* Full width */
-        z-index: 999; /* Ensure it appears above other content */
+        display: none;
+        /* Hide nav links by default on mobile */
+        flex-direction: column;
+        /* Stack links vertically */
+        position: absolute;
+        /* Position it absolute for overlay effect */
+        top: 60px;
+        /* Position below the header */
+        right: 0;
+        /* Align to the right */
+        background: rgba(255, 255, 255, 0.9);
+        /* Background color */
+        width: 100%;
+        /* Full width */
+        z-index: 999;
+        /* Ensure it appears above other content */
     }
 
     .nav-links.active {
-        display: flex; /* Show links when menu is open */
+        display: flex;
+        /* Show links when menu is open */
     }
 
     .nav-links a {
-        padding: 1rem; /* Padding for touch targets */
-        border-bottom: 1px solid #ccc; /* Add border between links */
+        padding: 1rem;
+        /* Padding for touch targets */
+        border-bottom: 1px solid #ccc;
+        /* Add border between links */
     }
 
     .nav-links a:last-child {
-        border-bottom: none; /* Remove border from last link */
+        border-bottom: none;
+        /* Remove border from last link */
     }
 }
 
@@ -216,11 +248,13 @@ body {
     .header-logo h1 {
         font-size: 3rem;
     }
+
     .nav-links {
         margin-left: 50px;
         font-size: 1rem;
         gap: 30px;
     }
+
     .profile-sub {
         font-size: 1rem;
     }
@@ -230,45 +264,61 @@ body {
     .header-logo h1 {
         font-size: 2.5rem;
     }
+
     .header-logo h2,
     .header-logo h3 {
         font-size: 1rem;
     }
+
     .nav-links {
-        flex-direction: row; /* Make sure they stay in a row */
-        justify-content: center; /* Center the links */
-        margin-left: 0; /* Reset left margin */
-        padding: 1rem; /* Add some padding */
+        flex-direction: row;
+        /* Make sure they stay in a row */
+        justify-content: center;
+        /* Center the links */
+        margin-left: 0;
+        /* Reset left margin */
+        padding: 1rem;
+        /* Add some padding */
     }
+
     .nav-links a {
-        margin: 0 10px; /* Adjust margins between links */
+        margin: 0 10px;
+        /* Adjust margins between links */
     }
 }
-  
+
 @media only screen and (max-width: 600px) {
     .header-logo h1 {
         font-size: 2rem;
     }
+
     .header-logo h2,
     .header-logo h3 {
         font-size: 0.9rem;
     }
+
     .nav-links {
         font-size: 0.9rem;
-        gap: 10px; /* Adjust spacing for small screens */
-        flex-wrap: wrap; /* Allow wrapping to next line if needed */
+        gap: 10px;
+        /* Adjust spacing for small screens */
+        flex-wrap: wrap;
+        /* Allow wrapping to next line if needed */
     }
+
     #home h1 {
         font-size: 2.5rem;
     }
+
     #home p {
         font-size: 1.2rem;
     }
+
     #about-us h1,
     #contactus h1 {
-    
+
         font-size: 2rem;
     }
+
     #about-us p,
     #contactus p {
         font-size: 1.2rem;
@@ -277,18 +327,23 @@ body {
 
 @media only screen and (max-width: 375px) {
     .nav-links {
-        gap: 5px; /* Reduce gap further for very small screens */
+        gap: 5px;
+        /* Reduce gap further for very small screens */
     }
+
     #home h1 {
         font-size: 2rem;
     }
+
     #home p {
         font-size: 1rem;
     }
+
     #about-us h1,
     #contactus h1 {
         font-size: 1.8rem;
     }
+
     #about-us p,
     #contactus p {
         font-size: 1rem;
@@ -303,7 +358,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 4rem 2rem;
+    padding: 8rem 2rem;
     background-color: #f2f2f2;
     color: #333;
     margin-bottom: 50px;
@@ -328,7 +383,7 @@ body {
 
 .home__mouse-scroll-cont {
     position: absolute;
-    bottom: -20%;
+    bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -355,34 +410,39 @@ body {
 }
 
 @keyframes bounce {
+
     0%,
     100% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(10px);
     }
 }
 
 .hamburger {
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 .nav-links a {
-    transition: color 0.3s, transform 0.2s; 
+    transition: color 0.3s, transform 0.2s;
 }
 
 .nav-links a:hover {
     color: rgb(0, 0, 0);
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
+
 @keyframes moveDot {
     0% {
         transform: translate(-50%, 0);
     }
+
     50% {
         transform: translate(-50%, 5px);
     }
+
     100% {
         transform: translate(-50%, 0);
     }
@@ -399,11 +459,11 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - 60px);
+    height: calc(110vh - 10px);
     background-color: #fff;
     color: #000;
     text-align: center;
-    padding-top: 60px;
+    margin-top: -150px;
 }
 
 #about-us h1 {
@@ -438,7 +498,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 70vh;
+    height: 65vh;
     background-color: #f2f2f2;
     color: #000;
     text-align: center;
@@ -448,7 +508,7 @@ body {
 #contactus h1 {
     font-size: 3rem;
     font-weight: bold;
-    margin-top: -50px;
+    margin-top:10px;
     position: relative;
 }
 
@@ -468,26 +528,27 @@ body {
 #contactus p {
     font-size: 1.5rem;
     max-width: 1000px;
-    line-height: 1.5;
-    margin-top: 50px;
+    line-height: 0;
+    margin-top: 20px;
 }
 
 @media only screen and (max-width: 600px) {
     #contactus h1 {
         font-size: 2.5rem;
     }
+
     #contactus p {
         font-size: 1.2rem;
     }
 }
+
 .social-icons {
     display: flex;
     gap: 15px;
     margin-top: 10px;
-  }
-  
-  .social-icon {
+}
+
+.social-icon {
     width: 30px;
     height: 30px;
-  }
-  
+}
