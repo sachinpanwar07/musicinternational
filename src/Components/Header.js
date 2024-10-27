@@ -104,7 +104,7 @@ const Header = ({ onNavClick }) => {
 
         <div class="profile-container">
           <div class="profile-sub">
-            <a href="#" class="profile-link">
+          <a href="#" className="profile-link" onClick={() => onNavClick("profile")}>
               My Profile
             </a>
           </div>

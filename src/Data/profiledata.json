@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "name": "Alex Harmony",
+      "description": "Professional Music Producer and Composer",
+      "image": "./images/profile1.jpg",
+      "following": "1.5K",
+      "followers": "2.3M",
+      "views": "12.5M",
+      "socialLinks": {
+        "instagram": "https://www.instagram.com/alexharmony",
+        "facebook": "https://www.facebook.com/alexharmony",
+        "youtube": "https://www.youtube.com/channel/alexharmony",
+        "twitter": "https://twitter.com/alexharmony"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Jamie Melody",
+      "description": "Award-winning Vocalist and Songwriter",
+      "image": "./images/profile2.jpg",
+      "following": "980",
+      "followers": "5.1M",
+      "views": "20M",
+      "socialLinks": {
+        "instagram": "https://www.instagram.com/jamiemelody",
+        "facebook": "https://www.facebook.com/jamiemelody",
+        "youtube": "https://www.youtube.com/channel/jamiemelody",
+        "twitter": "https://twitter.com/jamiemelody"
+      }
+    }
+  ]
+  

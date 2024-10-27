@@ -16,7 +16,6 @@ const App = () => {
     <div>
       <Header onNavClick={setActiveSection} />
 
-      {/* Render Home section */}
       {activeSection === 'home' && (
         <div>
           <Home />
@@ -25,7 +24,8 @@ const App = () => {
         </div>
       )}
 
-      {/* Conditionally render other sections based on active section */}
+      {activeSection === 'about-us' && <AboutUs />}
+      {activeSection === 'contact-us' && <ContactUs />}
       {activeSection === 'members' && <Members />}
       {activeSection === 'content' && <Content />}
       {activeSection === 'community' && <Community />}
