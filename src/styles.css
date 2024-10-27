@@ -1,25 +1,25 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-  }
-  
-  .header {
+}
+
+.header {
     display: flex;
     justify-content: space-between;
     padding: 5px;
     background: linear-gradient(90deg, rgba(221, 13, 48, 0.863), rgba(245, 87, 113, 0.808));
     color: white;
-  }
-  
-  .header-logo {
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+}
+.header-logo {
     display: grid;
     grid-template-columns: 1fr 1fr;
-   
     gap: 10px;
-    
-  }
-  
-  .header-logo h1 {
+}
+
+.header-logo h1 {
     font-size: 4rem;
     text-transform: uppercase;
     font-weight: 700;
@@ -28,34 +28,29 @@ body {
     margin-bottom: 1px;
     letter-spacing: 1px;
     grid-column: 1;
-    
-  }
-  
-  .header-logo h2,
-  .header-logo h3 {
+}
+
+.header-logo h2,
+.header-logo h3 {
     font-size: 1.2rem;
     text-transform: uppercase;
     font-weight: 700;
     margin-left: -12px;
-  
     letter-spacing: 1px;
-  }
-  
-  .header-logo h2 {
+}
+
+.header-logo h2 {
     margin-top: 35px;
     grid-column: 2;
- 
-  }
-  
-  .header-logo h3 {
+}
+
+.header-logo h3 {
     margin-top: -55px;
     margin-bottom: 25px;
     grid-column: 2;
-    
-  }
-  
-  
-  .nav-links {
+}
+
+.nav-links {
     padding: 2.9rem;
     margin-left: 145px;
     display: flex;
@@ -64,414 +59,418 @@ body {
     letter-spacing: 1px;
     font-weight: 700;
     gap: 50px;
-  }
-  
-  .nav-links a {
+    flex-wrap: wrap; /* Allows links to wrap */
+}
+
+.nav-links a {
     color: white;
     text-decoration: none;
     cursor: pointer;
     position: relative;
     transition: color 0.3s;
-  }
-  
-  
-  .nav-links a::after {
+}
+
+.nav-links a::after {
     content: "";
     position: absolute;
     left: 0;
     bottom: -4px;
-  
     width: 0;
     height: 4px;
-    
     background-color: black;
     border-radius: 100px;
     transition: width 0.3s ease;
-    
-  }
-  
+}
 
-  .nav-links a:hover::after {
+.nav-links a:hover::after {
     width: 100%;
-  
-  }
-  
-  .nav-links a:hover {
+}
+
+.nav-links a:hover {
     color: rgb(0, 0, 0);
-   
-  }
-  
-  
-  .profile-container {
+}
+
+.profile-container {
     display: flex;
     align-items: center;
     cursor: pointer;
     color: #ffffff;
     transition: color 0.3s;
-  }
-  
-  .profile-container:hover {
+}
+
+.profile-container:hover {
     color: #000000;
-  }
-  
-  .profile-sub {
+}
+
+.profile-sub {
     display: flex;
     font-size: 1.2rem;
     font-weight: 700;
     letter-spacing: 1px;
     gap: 50px;
     margin-right: 10px;
-  }
-  
-  .profile-img-cont {
+}
+
+.profile-img-cont {
     width: 4rem;
     height: 4rem;
     border-radius: 50px;
     overflow: hidden;
     margin-right: 2rem;
     background: #000000;
-  }
-  
-  @media only screen and (max-width: 56.25em) {
-    .profile-img-cont {
-      width: 4rem;
-      height: 4rem;
-      margin-right: 2rem;
-    }
-  }
-  
-  .profile-img {
+}
+
+.profile-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
     display: block;
-  }
-  
-  /* Underline and Color Change on Hover */
-  .profile-sub .profile-link {
-    color: #ffffff;
-    text-decoration: none;
-    position: relative;
-    transition: color 0.3s;
-    
-  }
-  
-  /* Create underline */
-  .profile-sub .profile-link::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    
-    width: 0;
-    height: 4px;
- 
-    background-color: black;
-    border-radius: 100px;
-   
-    transition: width 0.3s ease;
-  }
-  
+}
+/* Add this CSS for hamburger menu */
+.hamburger {
+    display: none; /* Initially hide the hamburger icon */
+    flex-direction: column; /* Stack the bars vertically */
+    cursor: pointer; /* Indicate it's clickable */
+}
+.hamburger {
+    display: none; /* Initially hidden for larger screens */
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px; /* Width of the hamburger icon */
+    height: 30px; /* Height of the hamburger icon */
+    cursor: pointer; /* Indicate it's clickable */
+    margin-right: 20px; /* Add some margin to the right */
+}
 
-  .profile-sub .profile-link:hover {
-    color: #000000;
-   
-  }
-  
-  .profile-sub .profile-link:hover::after {
-    width: 100%;
-  
-  }
-  
-  #home {
-  
+/* Hamburger bar styles */
+.bar {
+    width: 100%; /* Full width */
+    height: 4px; /* Height of each bar */
+    background-color: white; /* Color of the bars */
+    border-radius: 5px; /* Optional: rounded edges */
+    transition: all 0.3s ease; /* Transition for hover effects */
+}
+
+/* Show the hamburger icon on smaller screens */
+@media only screen and (max-width: 900px) {
+    .hamburger {
+        display: flex; /* Show on mobile */
+    }
+
+    .nav-links {
+        display: none; /* Hide the nav links initially */
+        flex-direction: column; /* Stack the links vertically */
+        position: absolute; /* Position the menu absolutely */
+        top: 60px; /* Adjust according to your header height */
+        right: 0; /* Align to the right */
+        background-color: rgba(221, 13, 48, 0.863); /* Background color */
+        width: 100%; /* Full width */
+        padding: 1rem; /* Padding around the menu */
+        z-index: 999; /* Ensure it is on top */
+    }
+
+    .nav-links.active {
+        display: flex; /* Show when active */
+    }
+}
+
+/* Display hamburger icon on mobile devices */
+@media only screen and (max-width: 600px) {
+    .hamburger {
+        display: flex; /* Show hamburger icon */
+        margin-right: 20px; /* Add some margin for spacing */
+    }
+
+    .nav-links {
+        display: none; /* Hide nav links by default on mobile */
+        flex-direction: column; /* Stack links vertically */
+        position: absolute; /* Position it absolute for overlay effect */
+        top: 60px; /* Position below the header */
+        right: 0; /* Align to the right */
+        background: rgba(255, 255, 255, 0.9); /* Background color */
+        width: 100%; /* Full width */
+        z-index: 999; /* Ensure it appears above other content */
+    }
+
+    .nav-links.active {
+        display: flex; /* Show links when menu is open */
+    }
+
+    .nav-links a {
+        padding: 1rem; /* Padding for touch targets */
+        border-bottom: 1px solid #ccc; /* Add border between links */
+    }
+
+    .nav-links a:last-child {
+        border-bottom: none; /* Remove border from last link */
+    }
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 1200px) {
+    .header-logo h1 {
+        font-size: 3rem;
+    }
+    .nav-links {
+        margin-left: 50px;
+        font-size: 1rem;
+        gap: 30px;
+    }
+    .profile-sub {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .header-logo h1 {
+        font-size: 2.5rem;
+    }
+    .header-logo h2,
+    .header-logo h3 {
+        font-size: 1rem;
+    }
+    .nav-links {
+        flex-direction: row; /* Make sure they stay in a row */
+        justify-content: center; /* Center the links */
+        margin-left: 0; /* Reset left margin */
+        padding: 1rem; /* Add some padding */
+    }
+    .nav-links a {
+        margin: 0 10px; /* Adjust margins between links */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .header-logo h1 {
+        font-size: 2rem;
+    }
+    .header-logo h2,
+    .header-logo h3 {
+        font-size: 0.9rem;
+    }
+    .nav-links {
+        font-size: 0.9rem;
+        gap: 10px; /* Adjust spacing for small screens */
+        flex-wrap: wrap; /* Allow wrapping to next line if needed */
+    }
+    #home h1 {
+        font-size: 2.5rem;
+    }
+    #home p {
+        font-size: 1.2rem;
+    }
+    #about-us h1,
+    #contactus h1 {
+        font-size: 2rem;
+    }
+    #about-us p,
+    #contactus p {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .nav-links {
+        gap: 5px; /* Reduce gap further for very small screens */
+    }
+    #home h1 {
+        font-size: 2rem;
+    }
+    #home p {
+        font-size: 1rem;
+    }
+    #about-us h1,
+    #contactus h1 {
+        font-size: 1.8rem;
+    }
+    #about-us p,
+    #contactus p {
+        font-size: 1rem;
+    }
+}
+
+/* Other sections remain the same... */
+
+#home {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 4rem 2rem;
-   
     background-color: #f2f2f2;
-    
     color: #333;
-   
     margin-bottom: 50px;
     position: relative;
-   
-  }
-  
-  #home h1 {
+}
+
+#home h1 {
     font-size: 3rem;
     font-weight: 700;
     color: #222;
-   
     margin-top: -10px;
     margin-bottom: 0rem;
     letter-spacing: 1px;
-  }
-  
-  #home p {
+}
+
+#home p {
     font-size: 1.5rem;
     max-width: 700px;
- 
     line-height: 1.5;
     color: #555;
-  }
-  
-  .home__mouse-scroll-cont {
+}
+
+.home__mouse-scroll-cont {
     position: absolute;
     bottom: -20%;
     left: 50%;
     transform: translateX(-50%);
-    
-  }
-  
-  .mouse {
+}
+
+.mouse {
     width: 24px;
-   
     height: 40px;
-    
     border: 4px solid #000;
-    
     border-radius: 20px;
-   
     position: relative;
     animation: bounce 1s infinite;
-    
-  }
-  
+}
 
-  .dot {
+.dot {
     width: 8px;
-  
     height: 8px;
-   
     background-color: #000;
-   
     border-radius: 50%;
-    
     position: absolute;
     left: 50%;
     top: 5px;
-   
     transform: translateX(-50%);
-   
     animation: moveDot 1s infinite;
-   
-  }
-  
- 
-  @keyframes bounce {
-  
+}
+
+@keyframes bounce {
     0%,
     100% {
-      transform: translateY(0);
+        transform: translateY(0);
     }
-  
     50% {
-      transform: translateY(10px);
-      
+        transform: translateY(10px);
     }
-  }
-  
-  @keyframes moveDot {
+}
+
+.hamburger {
+    cursor: pointer; 
+}
+
+.nav-links a {
+    transition: color 0.3s, transform 0.2s; 
+}
+
+.nav-links a:hover {
+    color: rgb(0, 0, 0);
+    transform: scale(1.05); 
+}
+@keyframes moveDot {
     0% {
-      transform: translate(-50%, 0);
-      /* Start position at the top */
+        transform: translate(-50%, 0);
     }
-  
     50% {
-      transform: translate(-50%, 5px);
-      /* Move down */
+        transform: translate(-50%, 5px);
     }
-  
     100% {
-      transform: translate(-50%, 0);
-      /* Return to start */
+        transform: translate(-50%, 0);
     }
-  }
-  
-  @media only screen and (max-width: 37.5em) {
+}
+
+@media only screen and (max-width: 37.5em) {
     .home__mouse-scroll-cont {
-      display: none;
-      /* Hide on smaller screens */
+        display: none;
     }
-  }
-  
-  
-  #about-us {
+}
+
+#about-us {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - 60px); 
+    height: calc(100vh - 60px);
     background-color: #fff;
     color: #000;
     text-align: center;
-    padding-top: 60px; 
+    padding-top: 60px;
 }
-  #about-us h1 {
+
+#about-us h1 {
     font-size: 3rem;
-    
     font-weight: bold;
-  
     margin-bottom: 1rem;
-   
     position: relative;
-    
-  }
-  
-  #about-us h1::after {
+}
+
+#about-us h1::after {
     content: "";
-    /* Necessary for a pseudo-element */
     display: block;
-    /* Makes the pseudo-element behave like a block */
     height: 6px;
-    /* Height of the underline */
     width: 30%;
-    /* Full width of the heading */
     background: linear-gradient(90deg, rgba(221, 13, 48, 0.863), rgba(245, 87, 113, 0.808));
-    /* Gradient background */
     position: absolute;
-    /* Positioning the pseudo-element */
     left: 50%;
-    /* Align to the left */
     transform: translateX(-50%);
     bottom: -25px;
-    /* Position it just below the heading (adjust as needed) */
     border-radius: 500px;
-    /* Optional: round the edges of the underline */
-  }
-  
-  #about-us p {
+}
+
+#about-us p {
     font-size: 1.5rem;
-    /* Font size for the paragraph */
     max-width: 1000px;
-    /* Restrict width for better readability */
     line-height: 1.5;
-    /* Set line height for spacing */
     margin-top: 50px;
-    /* Remove default margins */
-  }
-  
-  
-  #contactus {
+}
+
+#contactus {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Center items horizontally */
     justify-content: center;
-    /* Center items vertically */
     height: 70vh;
-    /* Full height of the viewport */
     background-color: #f2f2f2;
-    /* Grey background */
     color: #000;
-    /* Black text color */
     text-align: center;
-    /* Center text alignment */
     font-family: 'Calibri', sans-serif;
-    /* Set font to Calibri */
-  }
-  
-  #contactus h1 {
+}
+
+#contactus h1 {
     font-size: 3rem;
-    /* Font size for the heading */
     font-weight: bold;
-    /* Make the heading bold */
-    margin-top: -10px;
-    margin-bottom: 1rem;
-    /* Space below the heading */
+    margin-top: -50px;
     position: relative;
-    /* Required for the pseudo-element positioning */
-  }
-  
-  #contactus h1::after {
+}
+
+#contactus h1::after {
     content: "";
-    /* Necessary for a pseudo-element */
     display: block;
-    /* Makes the pseudo-element behave like a block */
     height: 6px;
-    /* Height of the underline */
     width: 30%;
-    /* Set the width to 30% of the heading */
     background: linear-gradient(90deg, rgba(221, 13, 48, 0.863), rgba(245, 87, 113, 0.808));
-    /* Gradient background */
     position: absolute;
-    /* Positioning the pseudo-element */
     left: 50%;
-    /* Center the pseudo-element horizontally */
     transform: translateX(-50%);
-    /* Adjust for centering */
     bottom: -25px;
-    /* Position it just below the heading (adjust as needed) */
     border-radius: 500px;
-    /* Optional: round the edges of the underline */
-  }
-  
-  #contactus p {
+}
+
+#contactus p {
     font-size: 1.5rem;
-    /* Font size for the paragraph */
-    margin: 0.5rem 0;
+    max-width: 1000px;
+    line-height: 1.5;
     margin-top: 50px;
-    /* Space above and below the paragraph */
-  }
-  
-  #contactus p1 {
-    font-size: 1.5rem;
-    /* Font size for the paragraph */
-    margin: 0.5rem 0;
-  }
-  
-  .social-icons {
-    margin-top: 1rem;
-    /* Space above the icons */
-    display: flex;
-    /* Align icons in a row */
-    justify-content: center;
-    /* Center the icons */
-  }
-  
-  .social-icon {
-    width: 30px;
-    /* Width of the icon */
-    height: 30px;
-    /* Height of the icon */
-    margin: 0 10px;
-    /* Space between icons */
-    fill: #000;
-    /* Black color for the icons */
-    transition: transform 0.3s;
-    /* Smooth hover effect */
-  }
-  
-  .social-icon:hover {
-    transform: scale(1.1);
-    /* Slightly enlarge icon on hover */
-  }
-  
-  
-  #content {
-    background-color: #e9ecef;
-  }
-  
-  .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #000;
-    color: #fff;
-    height: 60px;
-    font-family: 'Calibri', sans-serif;
-    font-size: 1rem;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    margin-top: auto;
-  }
-  
-  .footer p {
-    margin: 0;
-  }
+}
+
+@media only screen and (max-width: 600px) {
+    #contactus h1 {
+        font-size: 2.5rem;
+    }
+    #contactus p {
+        font-size: 1.2rem;
+    }
+}

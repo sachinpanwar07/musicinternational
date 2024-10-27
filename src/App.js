@@ -5,6 +5,7 @@ import ContactUs from './screens/ContactUs';
 import AboutUs from './screens/AboutUs';
 import Members from './screens/Members';
 import Content from './screens/Content'
+import Community from './screens/Community'
 import './styles.css';
 
 const App = () => {
@@ -17,7 +18,7 @@ const App = () => {
       {activeSection === 'about-us' && <AboutUs />}
       {activeSection === 'members' && <Members />}
       {activeSection === 'content' && <Content />}
-      {activeSection === 'contactus' && <ContactUs />}
+      {activeSection === 'community' && <Community />}
     </div>
   );
 };
