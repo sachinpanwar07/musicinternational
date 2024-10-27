@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import Header from './Components/Header';
 import Home from './screens/Home';
-import ContactUs from './screens/ContactUs';
 import AboutUs from './screens/AboutUs';
+import ContactUs from './screens/ContactUs';
 import Members from './screens/Members';
-import Content from './screens/Content'
-import Community from './screens/Community'
+import Content from './screens/Content';
+import Community from './screens/Community';
+import Profile from './screens/Profile';
 import './styles.css';
 
 const App = () => {
@@ -14,11 +15,21 @@ const App = () => {
   return (
     <div>
       <Header onNavClick={setActiveSection} />
-      {activeSection === 'home' && <Home />}
-      {activeSection === 'about-us' && <AboutUs />}
+
+      {/* Render Home section */}
+      {activeSection === 'home' && (
+        <div>
+          <Home />
+          <AboutUs />
+          <ContactUs />
+        </div>
+      )}
+
+      {/* Conditionally render other sections based on active section */}
       {activeSection === 'members' && <Members />}
       {activeSection === 'content' && <Content />}
       {activeSection === 'community' && <Community />}
+      {activeSection === 'profile' && <Profile />}
     </div>
   );
 };

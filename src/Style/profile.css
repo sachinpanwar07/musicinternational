@@ -1,0 +1,30 @@
+.profile-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .profile-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between the image and text */
+  }
+  
+  .profile-image {
+    width: 100px; /* Adjust size as needed */
+    height: 100px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fills the circle */
+  }
+  
+  .profile-text h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .profile-text p {
+    margin: 5px 0 0;
+    font-size: 16px;
+  }
+  

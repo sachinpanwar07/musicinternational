@@ -59,7 +59,8 @@ body {
     letter-spacing: 1px;
     font-weight: 700;
     gap: 50px;
-    flex-wrap: wrap; /* Allows links to wrap */
+    flex-wrap: wrap; 
+    
 }
 
 .nav-links a {
@@ -70,21 +71,12 @@ body {
     transition: color 0.3s;
 }
 
-.nav-links a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    width: 0;
-    height: 4px;
-    background-color: black;
-    border-radius: 100px;
-    transition: width 0.3s ease;
-}
 
 .nav-links a:hover::after {
     width: 100%;
+   
 }
+
 
 .nav-links a:hover {
     color: rgb(0, 0, 0);
@@ -96,11 +88,19 @@ body {
     cursor: pointer;
     color: #ffffff;
     transition: color 0.3s;
+    margin-top: -19px;
+  
 }
 
 .profile-container:hover {
     color: #000000;
 }
+
+
+  .profile-sub a {
+    text-decoration: none; 
+}
+
 
 .profile-sub {
     display: flex;
@@ -109,7 +109,9 @@ body {
     letter-spacing: 1px;
     gap: 50px;
     margin-right: 10px;
+    text-decoration: none; 
 }
+
 
 .profile-img-cont {
     width: 4rem;
@@ -127,23 +129,25 @@ body {
     object-position: center;
     display: block;
 }
-/* Add this CSS for hamburger menu */
+
+
+
 .hamburger {
-    display: none; /* Initially hide the hamburger icon */
-    flex-direction: column; /* Stack the bars vertically */
-    cursor: pointer; /* Indicate it's clickable */
+    display: none; 
+    flex-direction: column; 
+    cursor: pointer; 
 }
 .hamburger {
-    display: none; /* Initially hidden for larger screens */
+    display: none; 
     flex-direction: column;
     justify-content: space-around;
-    width: 30px; /* Width of the hamburger icon */
-    height: 30px; /* Height of the hamburger icon */
-    cursor: pointer; /* Indicate it's clickable */
-    margin-right: 20px; /* Add some margin to the right */
+    width: 30px; 
+    height: 30px; 
+    cursor: pointer; 
+    margin-right: 20px; 
 }
 
-/* Hamburger bar styles */
+
 .bar {
     width: 100%; /* Full width */
     height: 4px; /* Height of each bar */
@@ -240,7 +244,7 @@ body {
         margin: 0 10px; /* Adjust margins between links */
     }
 }
-
+  
 @media only screen and (max-width: 600px) {
     .header-logo h1 {
         font-size: 2rem;
@@ -262,6 +266,7 @@ body {
     }
     #about-us h1,
     #contactus h1 {
+    
         font-size: 2rem;
     }
     #about-us p,
@@ -290,7 +295,8 @@ body {
     }
 }
 
-/* Other sections remain the same... */
+
+
 
 #home {
     display: flex;
@@ -474,3 +480,14 @@ body {
         font-size: 1.2rem;
     }
 }
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .social-icon {
+    width: 30px;
+    height: 30px;
+  }
+  
