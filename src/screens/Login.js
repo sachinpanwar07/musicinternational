@@ -1,16 +1,23 @@
 import React from "react";
-
 import imagePath from "../constants/imagePath";
-import '../Style/login.css'
+import "../Style/login.css";
 const Login = () => {
   return (
-    <section id="login" className="login-container">
+    <section id="loginc" className="login-container">
       <div className="login-section">
         <div className="login-header">
           <h2>Sign In</h2>
           <div className="login-social">
-            <img src={imagePath.ic_facebookicon} alt="Facebook" className="social-icon"/>
-            <img src={imagePath.ic_xicon} alt="Twitter" className="social-icon"/>
+            <img
+              src={imagePath.ic_facebookicon}
+              alt="Facebook"
+              className="social-icon"
+            />
+            <img
+              src={imagePath.ic_xicon}
+              alt="Twitter"
+              className="social-icon"
+            />
           </div>
         </div>
         <label htmlFor="username">Username</label>
@@ -29,7 +36,9 @@ const Login = () => {
       <div className="login-welcome-section">
         <h2>Welcome to login</h2>
         <p>Don't have an account?</p>
-        <a href="#" className="signup-btn">Sign Up</a>
+        <a href="#" className="signup-btn">
+          Sign Up
+        </a>
       </div>
     </section>
   );
