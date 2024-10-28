@@ -3,7 +3,7 @@ import imagePath from "../constants/imagePath";
 import "../Style/login.css";
 const Login = () => {
   return (
-    <section id="loginc" className="login-container">
+    <section id="logincontainer" className="login-container">
       <div className="login-section">
         <div className="login-header">
           <h2>Sign In</h2>
