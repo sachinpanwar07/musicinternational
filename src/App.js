@@ -11,7 +11,7 @@ import './styles.css';
 import VideoContent from './screens/VIdeoContant';
 import JoinUs from './screens/JoinUs';
 import Footer from './Components/Footer';
-import LogIn from './screens/LogIn';
+import Login from './screens/Login';
 
 const App = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -37,7 +37,7 @@ const App = () => {
       {activeSection === 'content' && <Content />}
       {activeSection === 'community' && <Community />}
       {activeSection === 'profile' && <Profile />}
-      {activeSection === 'login' && <LogIn />}
+      {activeSection === 'login' && <Login />}
     </div>
   );
 };
