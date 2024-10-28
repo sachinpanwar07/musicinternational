@@ -102,14 +102,14 @@ const Header = ({ onNavClick }) => {
           Community
         </Link>
 
-        <div class="profile-container">
-          <div class="profile-sub">
-          <a href="#" className="profile-link" onClick={() => onNavClick("profile")}>
+        <div class="myprofile-container">
+          <div class="myprofile-sub">
+          <a href="#" className="myprofile-link" onClick={() => onNavClick("profile")}>
               My Profile
             </a>
           </div>
-          <div class="profile-img-cont">
-            <img src="/profile.jpg" alt="Profile" class="profile-img" />
+          <div class="myprofile-img-cont">
+            <img src={imagePath.ic_profile} alt="Profile" class="myprofile-img" />
           </div>
         </div>
       </nav>

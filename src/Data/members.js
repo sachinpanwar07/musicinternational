@@ -6,8 +6,8 @@ const members=[
       "title": "Singer-Songwriter",
       "image":ImagePath.ic_singer ,
       "social": {
-        "twitter": "https://twitter.com/taylorswift13",
-        "instagram": "https://instagram.com/taylorswift"
+        "Twitter": "https://twitter.com/taylorswift13",
+        "Instagram": "https://instagram.com/taylorswift"
       }
     },
     {
@@ -16,8 +16,8 @@ const members=[
       "title": "Singer-Songwriter",
       "image": ImagePath.ic_singer,
       "social": {
-        "twitter": "https://twitter.com/edsheeran",
-        "instagram": "https://instagram.com/teddysphotos"
+        "Twitter": "https://twitter.com/edsheeran",
+        "Instagram": "https://instagram.com/teddysphotos"
       }
     },
     {
@@ -26,8 +26,8 @@ const members=[
       "title": "Singer-Songwriter",
       "image": ImagePath.ic_singer,
       "social": {
-        "twitter": "https://twitter.com/Adele",
-        "instagram": "https://instagram.com/adele"
+        "Twitter": "https://twitter.com/Adele",
+        "Instagram": "https://instagram.com/adele"
       }
     },
     {
@@ -36,8 +36,8 @@ const members=[
       "title": "Singer-Performer",
       "image": ImagePath.ic_singer,
       "social": {
-        "twitter": "https://twitter.com/Beyonce",
-        "instagram": "https://instagram.com/beyonce"
+        "Twitter": "https://twitter.com/Beyonce",
+        "Instagram": "https://instagram.com/beyonce"
       }
     },
     {
@@ -46,8 +46,8 @@ const members=[
       "title": "Singer-Performer",
       "image": ImagePath.ic_singer,
       "social": {
-        "twitter": "https://twitter.com/brunomars",
-        "instagram": "https://instagram.com/brunomars"
+        "Twitter": "https://twitter.com/brunomars",
+        "Instagram": "https://instagram.com/brunomars"
       }
     },
     {
@@ -56,8 +56,8 @@ const members=[
       "title": "Singer-Performer",
       "image": ImagePath.ic_singer,
       "social": {
-        "twitter": "https://twitter.com/ArianaGrande",
-        "instagram": "https://instagram.com/arianagrande"
+        "Twitter": "https://twitter.com/ArianaGrande",
+        "Instagram": "https://instagram.com/arianagrande"
       }
     },
     {
@@ -66,8 +66,8 @@ const members=[
       "title": "Singer-Songwriter",
       "image": ImagePath.ic_singer,
       "social": {
-        "twitter": "https://twitter.com/billieeilish",
-        "instagram": "https://instagram.com/billieeilish"
+        "Twitter": "https://twitter.com/billieeilish",
+        "Instagram": "https://instagram.com/billieeilish"
       }
     },
     {
@@ -76,8 +76,8 @@ const members=[
       "title": "Singer-Songwriter",
       "image": ImagePath.ic_singer,
       "social": {
-        "twitter": "https://twitter.com/shawnmendes",
-        "instagram": "https://instagram.com/shawnmendes"
+        "Twitter": "https://twitter.com/shawnmendes",
+        "Instagram": "https://instagram.com/shawnmendes"
       }
     }
   ]
