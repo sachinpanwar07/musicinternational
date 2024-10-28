@@ -1,6 +1,6 @@
 import React from "react";
 import imagePath from "../constants/imagePath";
-import "../Style/login.css";
+import "../Style/loginScreen.css";
 const LoginScreen = () => {
   return (
     <section id="logincontainer" className="login-container">
