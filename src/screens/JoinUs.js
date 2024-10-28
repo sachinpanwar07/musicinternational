@@ -7,7 +7,7 @@ const JoinUs = () => {
     <p>
         Our full scale online community and social network!
     </p>
-    <a href="#" class="join-button">Join ➔</a>
+    <a href="#" class="join-button">Join Us ➔</a>
 </section>
   );
 };

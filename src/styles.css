@@ -639,6 +639,8 @@ body {
     text-align: center;      /* Center text alignment */
     font-family: 'Calibri', sans-serif; /* Set font to Calibri */
     padding: 2rem;           /* Add padding for spacing */
+    margin-top: -50px;
+    margin-bottom: 20px;
 }
 
 #joinus h1 {

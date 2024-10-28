@@ -11,6 +11,7 @@ import './styles.css';
 import VideoContent from './screens/VIdeoContant';
 import JoinUs from './screens/JoinUs';
 import Footer from './Components/Footer';
+import LogIn from './screens/LogIn'
 
 const App = () => {
   const [activeSection, setActiveSection] = useState('home');
