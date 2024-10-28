@@ -1,7 +1,7 @@
 import React from "react";
-import '../Style/login.css'; 
-import imagePath from "../constants/imagePath";
 
+import imagePath from "../constants/imagePath";
+import '../Style/login.css'
 const Login = () => {
   return (
     <section id="login" className="login-container">
