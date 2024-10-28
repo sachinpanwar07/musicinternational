@@ -1,5 +1,7 @@
 {
   "name": "musicinternational",
+  
+
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,6 +13,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "formik": "^2.4.6",
+    "gh-pages": "^6.2.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-player": "^2.16.0",
@@ -21,6 +24,9 @@
     "yup": "^1.4.0"
   },
   "scripts": {
+    "home": "https://sachinpanwar07.github.io/musicinternational",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
