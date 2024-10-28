@@ -1,7 +1,7 @@
 import React from "react";
 import imagePath from "../constants/imagePath";
 import "../Style/login.css";
-const Login = () => {
+const LoginScreen = () => {
   return (
     <section id="logincontainer" className="login-container">
       <div className="login-section">
@@ -44,4 +44,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default LoginScreen;
