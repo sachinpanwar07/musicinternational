@@ -79,12 +79,10 @@ body {
 .nav-links a:hover {
     color: rgb(0, 0, 0);
 }
-<<<<<<< HEAD
-.profile-container {
-=======
+
 
 .myprofile-container {
->>>>>>> 0739468ab1b4820f71ac03031984ffb23003aaf8
+
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -94,13 +92,12 @@ body {
 
 }
 
-<<<<<<< HEAD
-=======
+
 .myprofile-container:hover {
     color: #000000;
 }
 
->>>>>>> 0739468ab1b4820f71ac03031984ffb23003aaf8
+
 
 .myprofile-sub a {
     text-decoration: none;

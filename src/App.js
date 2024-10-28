@@ -11,7 +11,7 @@ import './styles.css';
 import VideoContent from './screens/VIdeoContant';
 import JoinUs from './screens/JoinUs';
 import Footer from './Components/Footer';
-import LogIn from './screens/LogIn'
+import LogIn from './screens/LogIn';
 
 const App = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -22,10 +22,10 @@ const App = () => {
 
       {activeSection === 'home' && (
         <div>
-          <Home />
+          <Home onCommunityClick={() => setActiveSection('community')} />
           <AboutUs />
-          <VideoContent/>
-          <JoinUs />
+          <VideoContent />
+          <JoinUs  onJoinClick={()=>setActiveSection('login')}/>
           <ContactUs />
           <Footer />
         </div>
@@ -37,6 +37,7 @@ const App = () => {
       {activeSection === 'content' && <Content />}
       {activeSection === 'community' && <Community />}
       {activeSection === 'profile' && <Profile />}
+      {activeSection === 'login' && <LogIn />}
     </div>
   );
 };

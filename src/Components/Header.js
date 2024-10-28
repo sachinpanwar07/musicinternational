@@ -114,7 +114,7 @@ const Header = ({ onNavClick }) => {
         </div>
       </nav>
     </header>
-  );
+  );    
 };
 
 export default Header;
