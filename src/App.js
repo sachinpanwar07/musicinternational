@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Header from './Components/Header';
 import Home from './screens/Home';
 import AboutUs from './screens/AboutUs';
+import EventScreen from './screens/EventScreen';
 import ContactUs from './screens/ContactUs';
 import Members from './screens/Members';
 import Content from './screens/Content';
@@ -12,6 +13,12 @@ import VideoContent from './screens/VIdeoContant';
 import JoinUs from './screens/JoinUs';
 import Footer from './Components/Footer';
 import LoginScreen from './screens/LoginScreen';
+import EventsHw from './screens/EventsHw';
+import MembersHw from './screens/MembersHw';
+import ContentHw from './screens/ContentHw';
+import CommunityHw from './screens/CommunityHw';
+import RecentNews from './screens/RecentNews';
+import UCEvent from './screens/UCEvent';
 
 const App = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -25,13 +32,19 @@ const App = () => {
           <Home onCommunityClick={() => setActiveSection('community')} />
           <AboutUs />
           <VideoContent />
+          <UCEvent />
+          <EventsHw />
+          <MembersHw />
+          <RecentNews />
+          <ContentHw />
+          <CommunityHw />
           <JoinUs  onJoinClick={()=>setActiveSection('login')}/>
           <ContactUs />
           <Footer />
         </div>
       )}
 
-      {activeSection === 'about-us' && <AboutUs />}
+      {activeSection === 'event-screen' && <EventScreen />}
       {activeSection === 'contact-us' && <ContactUs />}
       {activeSection === 'members' && <Members />}
       {activeSection === 'content' && <Content />}

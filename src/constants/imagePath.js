@@ -9,5 +9,13 @@ export default{
     ic_xicon:require('../constants/images/xicon.jpeg'),
     ic_post1:require('../constants/images/post1.jpg'),
     ic_post2:require('../constants/images/post2.jpg'),
-    ic_profile:require('../constants/images/profile.png')
+    ic_profile:require('../constants/images/profile.png'),
+    ic_searchsym:require('../constants/images/searchsym.png'),
+    ic_event1:require('../constants/images/event1.jpg'),
+    ic_event2:require('../constants/images/event2.jpg'),
+    ic_event3:require('../constants/images/event3.jpg'),
+    ic_event4:require('../constants/images/event4.jpg'),
+    ic_event5:require('../constants/images/event5.jpg'),
+    ic_event6:require('../constants/images/event6.jpg'),
+    ic_event7:require('../constants/images/event7.jpg'),
 }

@@ -45,6 +45,14 @@ const Header = ({ onNavClick }) => {
         <div className="bar"></div>
         <div className="bar"></div>
       </div>
+      <div class="search-bar">
+        <span class="search-icon">
+        <img src={imagePath.ic_searchsym} alt="Search Icon" />
+        </span>
+        <input type="text" placeholder="Search..." />
+
+      </div>
+
       <nav className={`nav-links ${isMenuOpen ? "active" : ""}`} ref={menuRef}>
         <Link
           to="home"
@@ -58,15 +66,15 @@ const Header = ({ onNavClick }) => {
           Home
         </Link>
         <Link
-          to="about-us"
+          to="event-screen"
           smooth={true}
           duration={500}
           onClick={() => {
-            onNavClick("about-us");
+            onNavClick("event-screen");
             closeMenu();
           }}
         >
-          About Us
+          Events
         </Link>
         <Link
           to="members"
@@ -103,8 +111,22 @@ const Header = ({ onNavClick }) => {
         </Link>
 
       </nav>
+      <nav className={`nav-link1 ${isMenuOpen ? "active" : ""}`} ref={menuRef}>
+        <Link
+          to="loginscreen"
+          smooth={true}
+          duration={500}
+          onClick={() => {
+            onNavClick("loginscreen");
+            closeMenu();
+          }}
+        >
+          Sign In/Sign Up
+        </Link>
+
+      </nav>
     </header>
-  );    
+  );
 };
 
 export default Header;
