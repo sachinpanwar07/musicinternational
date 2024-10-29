@@ -9,5 +9,6 @@ export default{
     ic_xicon:require('../constants/images/xicon.jpeg'),
     ic_post1:require('../constants/images/post1.jpg'),
     ic_post2:require('../constants/images/post2.jpg'),
-    ic_profile:require('../constants/images/profile.png')
+    ic_profile:require('../constants/images/profile.png'),
+    ic_search_icon:require('../constants/images/searchicon.png')
 }

@@ -12,6 +12,7 @@ import VideoContent from './screens/VIdeoContant';
 import JoinUs from './screens/JoinUs';
 import Footer from './Components/Footer';
 import LoginScreen from './screens/LoginScreen';
+import SearchBar from './Components/SearchBar';
 
 const App = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -23,6 +24,7 @@ const App = () => {
       {activeSection === 'home' && (
         <div>
           <Home onCommunityClick={() => setActiveSection('community')} />
+            
           <AboutUs />
           <VideoContent />
           <JoinUs  onJoinClick={()=>setActiveSection('login')}/>
