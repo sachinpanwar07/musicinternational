@@ -113,11 +113,11 @@ const Header = ({ onNavClick }) => {
       </nav>
       <nav className={`nav-link1 ${isMenuOpen ? "active" : ""}`} ref={menuRef}>
         <Link
-          to="loginscreen"
+          to="login"
           smooth={true}
           duration={500}
           onClick={() => {
-            onNavClick("loginscreen");
+            onNavClick("login");
             closeMenu();
           }}
         >

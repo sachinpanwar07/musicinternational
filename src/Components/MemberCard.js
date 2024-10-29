@@ -1,6 +1,7 @@
 import React from "react";
 import '../Style/memberCard.css';
-const MemberCard = ({ name, image, social }) => {
+
+const MemberCard = ({ name, image, social = {} }) => {
   const socialLinks = Object.entries(social); 
   return (
     <div className="mcard">

@@ -18,4 +18,6 @@ export default{
     ic_event5:require('../constants/images/event5.jpg'),
     ic_event6:require('../constants/images/event6.jpg'),
     ic_event7:require('../constants/images/event7.jpg'),
+    ic_search_icon:require('../constants/images/searchicon.png')
+
 }

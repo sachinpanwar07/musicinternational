@@ -19,6 +19,7 @@ import ContentHw from './screens/ContentHw';
 import CommunityHw from './screens/CommunityHw';
 import RecentNews from './screens/RecentNews';
 import UCEvent from './screens/UCEvent';
+import SearchBar from './Components/SearchBar';
 
 const App = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -30,6 +31,7 @@ const App = () => {
       {activeSection === 'home' && (
         <div>
           <Home onCommunityClick={() => setActiveSection('community')} />
+            
           <AboutUs />
           <VideoContent />
           <UCEvent />
