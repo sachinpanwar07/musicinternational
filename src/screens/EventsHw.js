@@ -5,6 +5,7 @@ const EventsHw = () => {
     <section id="eventshw">
       <h1>EventsHw</h1>
       <p></p>
+      <button>Know More ➔</button>
     </section>
 
   );

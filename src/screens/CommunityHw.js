@@ -17,6 +17,7 @@ const CommunityHw = () => {
           />
         ))}
       </div>
+      <button>Know More ➔</button>
     </section>
 
   );

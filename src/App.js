@@ -17,7 +17,6 @@ import EventsHw from './screens/EventsHw';
 import MembersHw from './screens/MembersHw';
 import ContentHw from './screens/ContentHw';
 import CommunityHw from './screens/CommunityHw';
-import RecentNews from './screens/RecentNews';
 import UCEvent from './screens/UCEvent';
 import SearchBar from './Components/SearchBar';
 
@@ -34,12 +33,11 @@ const App = () => {
             
           <AboutUs />
           <VideoContent />
+          <MembersHw />
           <UCEvent />
           <EventsHw />
-          <MembersHw />
-          <RecentNews />
-          <ContentHw />
           <CommunityHw />
+          <ContentHw />
           <JoinUs  onJoinClick={()=>setActiveSection('login')}/>
           <ContactUs />
           <Footer />

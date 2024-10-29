@@ -46,7 +46,7 @@
   }
   
 .login-section, .login-welcome-section {
-    height: 450px; 
+    height: 320px; 
   }
   .login-section label {
     display: block;
@@ -101,13 +101,25 @@
     align-items: center;
     flex-direction: column;
   }
+
+  .login-welcome-section h2{
+    font-size: 1.5rem;
+    color: #fffefe;
+    margin: 0;
+  }
+
+  .login-welcome-section p{
+    font-size: 1.1rem;
+    color: #fffefe;
+    margin-top: 8px;
+  }
   
   .signup-btn {
     display: inline-block;
     background: transparent;
     border: 2px solid white;
     padding: 0.75rem 1.5rem;
-    margin-top: 1rem;
+    margin-top: 0rem;
     color: white;
     font-weight: bold;
     border-radius: 10px;
