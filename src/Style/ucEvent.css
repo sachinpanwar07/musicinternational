@@ -1,0 +1,55 @@
+.uc-event {
+    padding: 20px;
+    background-color: #f8f9fa; 
+}
+
+
+.ucevent-item {
+    flex: 0 0 200px; 
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.ucevent-image {
+    width: 100%; 
+    height: auto; 
+}
+
+.ucevent-title {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.ucsee-more-button {
+    padding: 10px 20px;
+    background-color: #d61d30; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+.ucsee-more-button:hover {
+    background-color: #c00; 
+
+}
+.ucevent-list {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto; 
+    overflow-y: hidden;
+    gap: 20px; 
+    margin-bottom: 20px; 
+    padding: 10px 0; 
+    scrollbar-width: none; 
+}
+
+.ucevent-list::-webkit-scrollbar {
+    width: 0; 
+    background: transparent;
+}
