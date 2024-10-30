@@ -25,29 +25,40 @@ const SearchBar = () => {
       <div className="search-container">
         <input
           type="text"
-          placeholder="Search by name" 
-          value={searchInput} 
-          onChange={handleSearch} 
+          placeholder="Search"
+          value={searchInput}
+          onChange={handleSearch}
         />
         <img
-          src={imagePath.ic_search_icon} 
+          src={imagePath.ic_search_icon}
           alt="Search"
-          className="search-icon"
+          className="search-icon1"
         />
       </div>
 
       {searchInput && (
         <div className="card-container">
           {filteredItems.map((member, index) => (
-            <MemberCard 
-              key={index} 
-              name={member.name} 
-              image={member.image} 
-              social={member.social} 
+            <MemberCard
+              key={index}
+              name={member.name}
+              image={member.image}
+              social={member.social}
             />
           ))}
         </div>
       )}
+      <div className="dropbtn-container">
+        <button className="dropbtn">
+          Filters <i className="fa fa-caret-down"></i>
+        </button>
+        <div className="dropdown-content">
+          <a href="#">Most Recent First</a>
+          <a href="#">Least Recent First</a>
+          <a href="#">Alphabetical A-Z</a>
+          <a href="#">Alphabetical Z-A</a>
+        </div>
+      </div>
     </div>
   );
 };

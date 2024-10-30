@@ -2,10 +2,14 @@ import React from 'react';
 import videos from '../Data/videos';
 import VideoPlayer from '../Components/VideoPlayer';
 import '../Style/content.css';
+import SearchBar from "../Components/SearchBar";
 
 const Content = () => {
   return (
     <section id="content">
+      <div style={{ marginTop: "1%", marginRight: "1%"}}>
+        <SearchBar />
+      </div>
       <h2 style={{ margin: "10px", textAlign: "center", marginTop: "30px", fontSize: "30px" }}>
         Discover What's New!
       </h2>

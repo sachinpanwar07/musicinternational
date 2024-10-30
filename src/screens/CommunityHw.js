@@ -21,7 +21,7 @@ const CommunityHw = ({ showAll = false, onSeeMoreClick }) => {
 
       {!showAll && (
         <button onClick={onSeeMoreClick} className="Csee-more-button">
-          See More
+          Know More ➔
         </button>
       )}
 

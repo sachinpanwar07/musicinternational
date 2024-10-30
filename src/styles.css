@@ -399,15 +399,12 @@ body {
     /* Removes default margin for better alignment */
 }
 
-
-
-
 #home {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 8rem 2rem;
+    padding: 10rem 2rem;
     background-color: #f2f2f2;
     color: #333;
     margin-bottom: 50px;
@@ -932,98 +929,15 @@ body {
 }
 
 
-
-
-
-#eventshw {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 8rem 2rem;
-    background-color: #f2f2f2;
-    color: #333;
-    margin-bottom: 50px;
-    position: relative;
-}
-
-#eventshw button {
-    align-items: center;
-    background-image: linear-gradient(90deg, rgba(221, 13, 48, 0.863), rgba(245, 87, 113, 0.808));
-    border: 0;
-    border-radius: 100px;
-    box-sizing: border-box;
-    color: #fff;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    font-family: "Codec cold", sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    height: 54px;
-    margin-top: 20px;
-    justify-content: center;
-    letter-spacing: .4px;
-    line-height: 1;
-    max-width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 3px;
-    text-decoration: none;
-    text-transform: uppercase;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-}
-
-#eventshw button:active {
-    outline: 0;
-}
-
-#eventshw button:hover {
-    outline: 0;
-}
-
-#eventshw button span {
-    transition: all 200ms;
-}
-
-#eventshw button:hover span {
-    transform: scale(.9);
-    opacity: .75;
-}
-
-@media screen and (max-width: 991px) {
-    #eventshw button {
-        font-size: 15px;
-        height: 50px;
-    }
-
-    #eventshw button span {
-        line-height: 50px;
-    }
-}
-
-#eventshw button:not([disabled]):focus {
-    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
-}
-
-#eventshw button:not([disabled]):hover {
-    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
-}
-
-
-
 #membersHw {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 0rem;
-    background-color: #ffffff;
+    padding: 2rem;
+    padding-bottom: 5rem;
+    background-color: #f2f2f2;
     color: #333;
-
-    margin-bottom: 100px;
     position: relative;
 }
 
@@ -1113,90 +1027,37 @@ body {
     box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
 }
 
-
-
-
-
-
-
-#contenthw {
-    display: flex;
+.contenthw {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 8rem 2rem;
-    background-color: #f2f2f2;
+    padding: 2rem 2rem;
+    background-color: #ffffff;
     color: #333;
-    margin-bottom: 50px;
+    padding-bottom: 160px;
     position: relative;
-}
-
-#contenthw button {
-    align-items: center;
-    background-image: linear-gradient(90deg, rgba(221, 13, 48, 0.863), rgba(245, 87, 113, 0.808));
-    border: 0;
-    border-radius: 100px;
-    box-sizing: border-box;
-    color: #fff;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    font-family: "Codec cold", sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    height: 54px;
-    margin-top: 20px;
-    justify-content: center;
-    letter-spacing: .4px;
-    line-height: 1;
-    max-width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 3px;
-    text-decoration: none;
-    text-transform: uppercase;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-}
-
-#contenthw button:active {
-    outline: 0;
-}
-
-#contenthw button:hover {
-    outline: 0;
-}
-
-#contenthw button span {
-    transition: all 200ms;
-}
-
-#contenthw button:hover span {
-    transform: scale(.9);
-    opacity: .75;
-}
-
-@media screen and (max-width: 991px) {
-    #contenthw button {
-        font-size: 15px;
-        height: 50px;
-    }
-
-    #contenthw button span {
-        line-height: 50px;
-    }
-}
-
-#contenthw button:not([disabled]):focus {
-    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
-}
-
-#contenthw button:not([disabled]):hover {
-    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
-}
-
-
+  }
+  
+  .contenthw h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 4rem;
+    position: relative;
+    color: black;
+  }
+  
+  .contenthw h1::after {
+    content: "";
+    display: block;
+    height: 6px;
+    width: 5%;
+    background: linear-gradient(90deg, rgba(221, 13, 48, 0.863), rgba(245, 87, 113, 0.808));
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -25px;
+    border-radius: 500px;
+  }
 
 #communityhw {
     display: flex;
@@ -1205,7 +1066,7 @@ body {
     text-align: center;
     padding: 2rem;
     padding-bottom: 6rem;
-    background-color: #ffffff;
+    background-color: #f2f2f2;
     color: #333;
     margin-bottom: 20px;
     position: relative;
