@@ -27,7 +27,8 @@
 
 .video-header {
   font-weight: bold;
-  margin-top: -100px;
+  margin-top: -55%;
+  margin-bottom: 0%;
 }
 
 .video-footer {
@@ -38,5 +39,6 @@
   font-size: 16px;
   font-weight: bold;
   color: #f3f2f2;
+  margin-top: 5%;
 
 }
