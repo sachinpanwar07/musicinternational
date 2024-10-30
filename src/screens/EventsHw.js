@@ -26,7 +26,7 @@ const EventsHw = ({ onSeeMoreClick }) => {
 
   return (
     <div className="eventsHw">
-      <h1>Upcoming Events</h1>
+      <h1>Our Events</h1>
       {renderEventList(upcomingEvents)}
       <button className="ucsee-more-button" onClick={onSeeMoreClick}>
       Know More ➔
