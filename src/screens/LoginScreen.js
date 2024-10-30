@@ -1,8 +1,12 @@
 import React from "react";
 import imagePath from "../constants/imagePath";
 import "../Style/loginScreen.css";
+import Footer from '../Components/Footer';
+import ContactUs from '../screens/ContactUs';
+
 const LoginScreen = () => {
   return (
+    <div>
     <section id="logincontainer" className="login-container">
       <div className="login-section">
         <div className="login-header">
@@ -40,7 +44,11 @@ const LoginScreen = () => {
           Sign Up
         </a>
       </div>
+      
     </section>
+    <ContactUs />
+      <Footer />
+    </div>
   );
 };
 

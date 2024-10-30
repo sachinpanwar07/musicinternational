@@ -2,6 +2,8 @@ import React from 'react';
 import '../Style/profile.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faFacebook, faYoutube, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import Footer from '../Components/Footer';
+import ContactUs from '../screens/ContactUs';
 
 import imagePath from '../constants/imagePath';
 
@@ -69,6 +71,8 @@ function Profile() {
           </div>
         </div>
       </div>
+      <ContactUs />
+      <Footer />
     </div>
   );
 }

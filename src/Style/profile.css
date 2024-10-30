@@ -2,7 +2,9 @@
   display: flex;
   align-items: center;
   cursor: pointer;
-  margin-top: 50px;
+  background-color: #f2f2f2;
+  padding-top: 7%;
+  padding-bottom: 7%;
 }
 
 .profile-left {
@@ -91,7 +93,7 @@ p {
 }
 
 .recent-posts-section {
-  background-color: #f0f0f0;
+  background-color: #ffffff;
   padding: 20px;
   margin-top: 20px;
 }

@@ -110,6 +110,18 @@ const Header = ({ onNavClick }) => {
           Community
         </Link>
 
+        <Link
+          to="profile"
+          smooth={true}
+          duration={500}
+          onClick={() => {
+            onNavClick("profile");
+            closeMenu();
+          }}
+        >
+          Profile
+        </Link>
+
       </nav>
       <nav className={`nav-link1 ${isMenuOpen ? "active" : ""}`} ref={menuRef}>
         <Link

@@ -2,8 +2,7 @@
 @import "~slick-carousel/slick/slick-theme.css";
 
 .event-screen {
-  padding: 10px;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   color: #fff;
 }
 
@@ -15,7 +14,8 @@
 }
 .carousel-image {
     position: relative; 
-    padding-left: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
     padding-top: 10px;
     display: flex;
     width: 90%;
@@ -48,7 +48,9 @@
 
 .event-section {
   margin-top: 30px;
-  padding: 0 20px;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  padding-bottom: 5%;
 }
 
 .event-section h3 {

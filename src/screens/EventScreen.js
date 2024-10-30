@@ -3,6 +3,8 @@ import Slider from 'react-slick';
 import imagePath from '../constants/imagePath';
 import '../Style/eventScreen.css'
 import SearchBar from "../Components/SearchBar";
+import Footer from '../Components/Footer';
+import ContactUs from '../screens/ContactUs';
 
 const EventScreen = () => {
   const carouselSettings = {
@@ -79,6 +81,8 @@ const EventScreen = () => {
         <h3>Past Events</h3>
         {renderEventList(pastEvents)}
       </section>
+      <ContactUs />
+      <Footer />
     </div>
   );
 };

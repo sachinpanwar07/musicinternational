@@ -3,11 +3,13 @@ import videos from '../Data/videos';
 import VideoPlayer from '../Components/VideoPlayer';
 import '../Style/content.css';
 import SearchBar from "../Components/SearchBar";
+import Footer from '../Components/Footer';
+import ContactUs from '../screens/ContactUs';
 
 const Content = () => {
   return (
     <section id="content">
-      <div style={{ marginTop: "1%", marginRight: "1%"}}>
+      <div style={{ marginTop: "1%", marginRight: "1%" }}>
         <SearchBar />
       </div>
       <h2 style={{ margin: "10px", textAlign: "center", marginTop: "30px", fontSize: "30px" }}>
@@ -23,6 +25,8 @@ const Content = () => {
           />
         ))}
       </div>
+      <ContactUs />
+      <Footer />
     </section>
   );
 };
