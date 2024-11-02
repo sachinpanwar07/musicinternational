@@ -6,6 +6,11 @@
   color: #fff;
 }
 
+.evs-slider{
+  
+  padding-bottom: 3%;
+}
+
 .carousel-slide {
   display: flex;
   justify-content: center;
@@ -14,14 +19,11 @@
 }
 .carousel-image {
     position: relative; 
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 10px;
+    padding: 5%;
+    margin-bottom: -20%;
+    margin-top: -15%;
     display: flex;
     width: 90%;
-    height: 500px;
-    border-top-left-radius: 40px; 
-    border-bottom-left-radius: 40px; 
     overflow: hidden; 
     transition: transform 0.3s ease-in-out;
     justify-content: center;
@@ -47,10 +49,10 @@
   
 
 .event-section {
-  margin-top: 30px;
+  margin-top: 2%;
   padding-left: 2.5%;
   padding-right: 2.5%;
-  padding-bottom: 5%;
+  margin-bottom: 3%;
 }
 
 .event-section h3 {

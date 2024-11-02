@@ -54,18 +54,20 @@ const EventScreen = () => {
   );
   return (
     <div className="event-screen">
-      <div style={{ marginTop: "1%", marginRight: "1%"}}>
+      <div style={{ marginTop: "1%", marginRight: "1%" }}>
         <SearchBar />
       </div>
-      <Slider {...carouselSettings}>
-        {upcomingEvents.slice(0, 3).map((event) => (
-          <div key={event.id} className="carousel-slide">
-            <h2 class="carousel-title">{event.title}</h2>
-            <img src={event.image} alt={event.title} className="carousel-image" />
+      <div className="evs-slider">
+        <Slider {...carouselSettings}>
+          {upcomingEvents.slice(0, 3).map((event) => (
+            <div key={event.id} className="carousel-slide">
+              <h2 class="carousel-title">{event.title}</h2>
+              <img src={event.image} alt={event.title} className="carousel-image" />
 
-          </div>
-        ))}
-      </Slider>
+            </div>
+          ))}
+        </Slider>
+      </div>
 
       <section className="event-section">
         <h3>Upcoming Events</h3>
